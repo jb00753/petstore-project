@@ -1,0 +1,107 @@
+/* Resetting default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #65C57B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: #fff;
+}
+
+.logo {
+    width: 120px;
+    height: 120px;
+    margin-top: 10px;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.sale {
+    font-weight: bold;
+    color: red;
+}
+
+.header-title {
+    flex: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+header h1 a {
+    text-decoration: none; /* Remove underline */
+    color: #fff; /* Change font color to #fff */
+}
+header h2 {
+    padding: 0 20px;
+    color: #0066b2;
+}
+
+nav {
+    background-color: #65C57B;
+    text-align: left;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px; /* Adjust the font size as needed */
+}
+nav a:hover {
+    color: #fff5e1; /* Change the color on hover */
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+    background: url('fishbackground.jpg') center center/cover; /* Background image */
+    overflow-y: auto;
+}
+
+.product {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+.faq {
+    background-color: #fff5e1;
+    padding: 20px;
+    text-align: center;
+}
+.product img {
+    width: 200px; /* Resize the image to 200px */
+}
+
+/* Add more styling for your products as needed */
+
+footer {
+    background-color: #65C57B;
+    text-align: center;
+    padding: 20px 0;
+    color: #fff;
+}
